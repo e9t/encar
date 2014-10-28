@@ -103,6 +103,6 @@ tocsv([[
     get_attr(g, u'options.ECS(전자제어 서스펜션)'),
     get_attr(g, u'seller.address').split()[0],
     parse_birthday(get_attr(g, 'birthday')).year
-] for g in DATAFILES], 'data-%s.csv' % BRAND,
+] for g in DATAFILES], 'data/%s.csv' % BRAND,
 headers=['id', 'name', 'price', 'fuel', 'color', 'mileage', 'page_hit', 'page_favs', 'registered', 'CD changer', 'sunroof', 'suspension', 'address', 'year'])
 
